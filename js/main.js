@@ -1,3 +1,46 @@
+// 히어로 음표 애니메이션
+const noteSymbols = ['♩', '♪', '♫', '♬'];
+const notesContainer = document.querySelector('.hero-notes');
+
+function createFloatingNote() {
+    if (!notesContainer) return;
+    const note = document.createElement('span');
+    note.textContent = noteSymbols[Math.floor(Math.random() * noteSymbols.length)];
+    note.style.cssText = `
+        position: absolute;
+        left: ${Math.random() * 100}%;
+        bottom: -50px;
+        font-size: ${Math.random() * 24 + 16}px;
+        opacity: 0;
+        animation: floatNote ${Math.random() * 6 + 7}s ease-in forwards;
+        color: rgba(255, 255, 255, ${(Math.random() * 0.2 + 0.1).toFixed(2)});
+        pointer-events: none;
+    `;
+    notesContainer.appendChild(note);
+    setTimeout(() => note.remove(), 13000);
+}
+
+// 이퀄라이저 바 생성
+const equalizerEl = document.querySelector('.hero-equalizer');
+if (equalizerEl) {
+    for (let i = 0; i < 32; i++) {
+        const bar = document.createElement('span');
+        const maxH = Math.floor(Math.random() * 50 + 15);
+        const dur  = (Math.random() * 0.5 + 0.3).toFixed(2);
+        const delay = (Math.random() * 1.5).toFixed(2);
+        bar.style.setProperty('--max-h', maxH + 'px');
+        bar.style.animationDuration = dur + 's';
+        bar.style.animationDelay   = '-' + delay + 's';
+        equalizerEl.appendChild(bar);
+    }
+}
+
+// 초기 음표 생성
+for (let i = 0; i < 12; i++) {
+    setTimeout(createFloatingNote, i * 500);
+}
+setInterval(createFloatingNote, 1200);
+
 // 검색 기능
 const searchEl = document.querySelector('.search');
 
