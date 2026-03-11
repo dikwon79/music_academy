@@ -185,6 +185,7 @@ header .sub-menu .search input:focus + .material-icons {
         top: 80px;
         left: 0;
         right: 0;
+        transform: none;
         background: #fff;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         max-height: 0;
