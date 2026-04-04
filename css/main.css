@@ -492,6 +492,18 @@ section {
     color: #888;
 }
 
+.stat-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.stat-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(102, 153, 0, 0.15);
+    border: 2px solid #669900;
+}
+
 /* ===== 이력 타임라인 ===== */
 .career {
     background: #fff;
