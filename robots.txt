@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://영주실용음악.com/sitemap.xml
