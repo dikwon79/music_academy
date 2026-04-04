@@ -10,19 +10,16 @@
   <circle cx="30" cy="30" r="28" fill="url(#iconGrad)"/>
 
   <!-- 음표 (흰색) -->
-  <!-- 음표 머리 -->
   <ellipse cx="22" cy="40" rx="7" ry="5" fill="white" transform="rotate(-15 22 40)"/>
-  <!-- 음표 기둥 -->
   <rect x="27.5" y="14" width="3" height="27" fill="white" rx="1.5"/>
-  <!-- 음표 꼬리 -->
   <path d="M30.5 14 Q42 17 42 27 Q37 22 30.5 25 Z" fill="white"/>
 
   <!-- 구분선 -->
   <line x1="68" y1="12" x2="68" y2="48" stroke="#e0e0e0" stroke-width="1.2"/>
 
-  <!-- 영주 텍스트 -->
-  <text x="78" y="30" font-family="'Noto Sans KR', 'Nanum Gothic', sans-serif" font-size="21" font-weight="800" fill="#222" letter-spacing="-0.5">영주</text>
+  <!-- 영주 -->
+  <text x="78" y="28" font-family="'Noto Sans KR', sans-serif" font-size="20" font-weight="800" fill="#222" letter-spacing="-0.5">영주</text>
 
-  <!-- 실용음악학원 텍스트 -->
-  <text x="78" y="48" font-family="'Noto Sans KR', 'Nanum Gothic', sans-serif" font-size="12" font-weight="400" fill="#669900" letter-spacing="2.5">실용음악학원</text>
+  <!-- 실용음악 -->
+  <text x="78" y="47" font-family="'Noto Sans KR', sans-serif" font-size="12" font-weight="400" fill="#669900" letter-spacing="3">실용음악</text>
 </svg>
